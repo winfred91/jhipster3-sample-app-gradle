@@ -1,6 +1,6 @@
 {
   "generator-jhipster": {
-    "jhipsterVersion": "3.0.0",
+    "jhipsterVersion": "3.3.0",
     "baseName": "jhipster",
     "packageName": "com.mycompany.myapp",
     "packageFolder": "com/mycompany/myapp",
@@ -20,6 +20,7 @@
       "gatling",
       "protractor"
     ],
+    "jhiPrefix": "jhi",
     "enableTranslation": false
   }
 }

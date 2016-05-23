@@ -64,6 +64,13 @@ jhipster:
         timeToLiveSeconds: 3600
         ehcache:
             maxBytesLocalHeap: 16M
+    security:
+        authentication:
+            oauth:
+                clientid: jhipsterapp
+                secret: my-secret-token-to-change-in-production
+                # Token is valid 30 minutes
+                tokenValidityInSeconds: 1800
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: jhipster@localhost
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
@@ -77,7 +84,7 @@ jhipster:
             host: localhost
             port: 2003
             prefix: jhipster
-        logs: # report metrics in the logs
+        logs: # Reports Dropwizard metrics in the logs
             enabled: false
             reportFrequency: 60 # in seconds
     logging:
@@ -86,3 +93,5 @@ jhipster:
             host: localhost
             port: 5000
             queueSize: 512
+    swagger: # swagger is enabled. It can be disabled by pasing 'no-swagger' profile at run time as well
+        enabled: true
