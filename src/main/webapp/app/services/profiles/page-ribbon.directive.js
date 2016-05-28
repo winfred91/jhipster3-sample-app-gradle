@@ -5,6 +5,8 @@
         .module('jhipsterApp')
         .directive('pageRibbon', pageRibbon);
 
+    pageRibbon.$inject = ['ProfileService', '$rootScope'];
+
     function pageRibbon(ProfileService, $rootScope) {
         var directive = {
             replace : true,
